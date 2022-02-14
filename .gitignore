@@ -1,23 +1,19 @@
-# Compiled class file
-*.class
+fun Media(x: Float, y: Float) {
+    var resultado : Float = (x+y)/2
+    println(resultado)
+}
 
-# Log file
-*.log
+fun main(args: Array<String>) {
+    val x : Float = 10F
+    val y : Float = 15.5F
+    println(Media(x,y))
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+    val palavra = "amor roma"
+    val reverse = palavra.reversed()
+    println(reverse)
+    if (palavra == reverse) {
+        println("é palindromo")
+    } else {
+        println("não palindromo")
+    }
+}
